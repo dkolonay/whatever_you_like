@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/test-get', function(req, res, next) {
+router.get('/api/test-get', function(req, res, next) {
   res.json({ title: 'Express' });
 });
 
