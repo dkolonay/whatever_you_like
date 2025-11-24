@@ -1,0 +1,45 @@
+.info-sidebar{
+    position: absolute;
+    width: 300px;
+    z-index: 4;
+    height: calc(100vh - 70px);
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 4px 5px rgb(42, 42, 87);
+}
+
+.show-sidebar{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease;
+}
+
+.hide-sidebar{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease;
+}
+
+.close-sidebar{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-park{
+    border: none;
+    background-color: rgb(42, 42, 87);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-park:hover{
+    cursor:pointer;
+    background-color: rgb(71, 71, 133);
+    transition: background-color 0.3s ease;
+}

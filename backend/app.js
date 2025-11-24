@@ -7,6 +7,10 @@ import logger from 'morgan';
 
 import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
+import mapRouter from './routes/map.js';
+
+import dotenv from 'dotenv';
+dotenv.config({ path: './.env' });
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -25,6 +29,7 @@ app.use(expressStatic(join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/map', mapRouter)
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

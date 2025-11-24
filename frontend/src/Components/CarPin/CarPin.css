@@ -1,0 +1,40 @@
+.car-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Speech bubble */
+.bubble {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: #2e2d75;
+  border: 2px solid #ddd;
+  text-align: center;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Bubble arrow */
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 18px solid white;
+}
+
+.car-image {
+  width: 50px;
+  transform: translateY(50%);
+}
