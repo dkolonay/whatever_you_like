@@ -19,6 +19,18 @@
     padding: 0 20px;
     margin: 0;
     box-sizing: border-box;
-    
+}
 
+.login-link{
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover{
+    color: rgb(221, 221, 221);
+    transition: color 0.3s ease;
 }

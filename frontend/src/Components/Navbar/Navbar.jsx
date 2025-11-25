@@ -21,7 +21,7 @@ const Navbar = ({ auth }) => {
     <nav className={"navbar"}>
       <div className={"nav-container"}>
         <h1>EasyPark</h1>
-        <button onClick={handleLogin}>{auth.isAuthenticated ? "Logout" : "Login"}</button>
+        <button className={"login-link"} onClick={handleLogin}>{auth.isAuthenticated ? "Logout" : "Login"}</button>
       </div>
     </nav>
   );
